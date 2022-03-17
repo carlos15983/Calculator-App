@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Layout*/
+
+.container {
+  margin: auto;
+  background-color: rgba(223, 217, 217, 0.39);
+  height: 500px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: 96.5px 96.5px 96.5px 96.5px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  border-radius: 2%;
+  gap: 5px;
+}
+.text-field {
+  display: flex;
+  grid-column: span 4;
+  background-color: beige;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2.5rem;
+  width: 100%;
+}
+.btn {
+  background-color: rgb(184, 185, 185);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}

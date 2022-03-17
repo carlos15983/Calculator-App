@@ -17,8 +17,11 @@ const btnAdd = document.querySelector('.btn-a');
 const btnClear = document.querySelector('.btn-c');
 const btnEquals = document.querySelector('.btn-e');
 
+let values = Array.from(textField.innerText);
+
 const init = function () {
   document.querySelector('.text-field').innerText = '';
+  values = [];
 };
 init();
 
@@ -26,13 +29,11 @@ const updateInput = function () {
   textField.innerText = values.join('');
 };
 
-let values = Array.from(textField.innerText);
 // console.log(values);
 
 //Button Functionaly
 btn1.addEventListener('click', function (e) {
   // console.log(document.querySelector('.btn'));
-  // console.log(e.target);
   values.push(e.target.innerText);
   updateInput();
 });
@@ -90,8 +91,7 @@ btnAdd.addEventListener('click', function (e) {
 });
 //Clear values
 btnClear.addEventListener('click', function (e) {
-  values = [];
-  updateInput();
+  init();
 });
 // Perform Operations
 btnEquals.addEventListener('click', function (e) {

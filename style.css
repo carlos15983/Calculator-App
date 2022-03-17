@@ -7,13 +7,14 @@
 
 .container {
   margin: auto;
-  background-color: rgba(223, 217, 217, 0.39);
-  height: 500px;
+  background-color: rgba(182, 179, 179, 0.39);
+  height: 525px;
   width: 400px;
   display: grid;
   grid-template-columns: 96.5px 96.5px 96.5px 96.5px;
   grid-template-rows: 100px 100px 100px 100px 100px;
   border-radius: 2%;
+  box-shadow: 5px 0 5px rgb(226, 223, 223);
   gap: 5px;
 }
 .text-field {
@@ -24,12 +25,22 @@
   justify-content: flex-end;
   font-size: 2.5rem;
   width: 100%;
+  border: none;
 }
 .btn {
-  background-color: rgb(184, 185, 185);
+  background: linear-gradient(to left, rgb(184, 185, 185), rgb(255, 99, 99));
+  /* background-color: rgb(184, 185, 185); */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
   border-radius: 50%;
+  border: none;
+  /* box-shadow: 5px 0 5px rgb(185, 182, 182); */
+}
+.btn:hover {
+  background: linear-gradient(to right, rgb(184, 185, 185), rgb(184, 185, 185));
+}
+.btn:active {
+  background: linear-gradient(to left, rgb(184, 185, 185), rgb(255, 99, 99));
 }
